@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+	<link rel="stylesheet" href="/style.css">
+	<title>anne pilates</title>
+</head>
+<body>
+	<h1>Anne's daily pilates class</h1>
+	<h2>appointment list</h2>
+	<button class="add"><a th:href="@{'/new'}"> Add </a></button>
+	<table th:if="${appointmentList != null AND appointmentList != ''}">
+		<tr>
+			<th>Name</th>
+			<th>Class</th>
+			<th>Date</th>
+			<th>Time</th>
+			<th>&nbsp;</th>
+			<th>&nbsp;</th>
+		</tr>
+		<tr th:each="a : ${appointmentList}">
+			<td th:text="${a.name}"></td>
+			<td th:text="${a.classname}"></td>
+			<td th:text="${a.appointmentDate}"></td>
+			<td th:text="${a.appointmentTime}"></td>
+			<td><a th:href="@{/editAppointment/}+${a.id}">Edit</a></td>
+			<td><a th:href="@{/deleteAppointment/}+${a.id}">Delete</a></td>
+		</tr>
+	</table>
+</body>
+</html>
