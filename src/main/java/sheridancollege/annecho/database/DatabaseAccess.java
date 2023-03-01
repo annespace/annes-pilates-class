@@ -18,11 +18,11 @@ public class DatabaseAccess {
 	@Autowired
 	protected NamedParameterJdbcTemplate jdbc;
 
-	public void insertAppointment(String name, String exhibition, LocalDate appointmentDate, LocalTime appointmentTime) {
+	public void insertAppointment(String name, String classname, LocalDate appointmentDate, LocalTime appointmentTime) {
 		MapSqlParameterSource namedParameters = new MapSqlParameterSource();
-		String query="INSERT INTO appointment(name, exhibition, appointmentDate, appointmentTime) VALUES(:name, :exhibition, :appointmentDate, :appointmentTime)";
+		String query="INSERT INTO appointment(name, classname, appointmentDate, appointmentTime) VALUES(:name, :classname, :appointmentDate, :appointmentTime)";
 		namedParameters.addValue("name", name);
-		namedParameters.addValue("exhibition", exhibition);
+		namedParameters.addValue("classname", classname);
 		namedParameters.addValue("appointmentDate", appointmentDate);
 		namedParameters.addValue("appointmentTime", appointmentTime);
 		int rowsAffected = jdbc.update(query, namedParameters);
