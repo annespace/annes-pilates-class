@@ -9,13 +9,14 @@
 
 h1 {
     font-family: lato, sans-serif;
-    font-size: 30px;
+    font-size: 15px;
     text-transform: uppercase;
-    padding: 5px;
-    margin: 20px 20px;
-    border: #c1d3e3 3px solid;
+    padding: 5px 5px;
+    width: 60px;
+
+    margin: 20px auto;
     color: #c1d3e3;
-    position: absolute;
+    border: #c1d3e3 3px solid;
 }
 
 .container {
