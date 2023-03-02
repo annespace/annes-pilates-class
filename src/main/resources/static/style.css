@@ -13,8 +13,7 @@ h1 {
     text-transform: uppercase;
     padding: 5px 5px;
     width: 60px;
-
-    margin: 20px auto;
+    margin: 20px auto 0px auto;
     color: #c1d3e3;
     border: #c1d3e3 3px solid;
 }
@@ -24,8 +23,8 @@ h1 {
     width: 1000px;
 }
 
-h2 {
-    font-size: 26px;
+h2{
+    font-size: 20px;
     text-transform: capitalize;
     padding: 30px;
     color: #333;
@@ -42,7 +41,7 @@ button {
 
 th {
     background-color: #eeeeee;
-    padding: 20px 60px;
+    padding: 20px 50px;
     text-transform: uppercase;
     color: #444;
 }
