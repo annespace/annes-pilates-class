@@ -30,10 +30,20 @@ h2{
     color: #333;
 }
 
-button {
-    margin-bottom: 10px;
-    alignment: left;
+.add {
+    padding: 0 10px;
+    margin: 10px auto;
+    text-decoration: none;
+
 }
+
+.add:hover {
+    color: #000;
+    font-weight: bold;
+    text-decoration: underline solid #000;
+}
+
+
 
 .table {
     margin: 0 auto;
