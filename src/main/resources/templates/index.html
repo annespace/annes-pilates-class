@@ -6,10 +6,11 @@
 	<title>anne pilates</title>
 </head>
 <body>
-	<h1>Anne's daily pilates class</h1>
-	<h2>appointment list</h2>
+	<h1>Anne's pilates studio</h1>
+	<div class="container">
+	<h2>schedule appointment</h2>
 	<button class="add"><a th:href="@{'/new'}"> Add </a></button>
-	<table th:if="${appointmentList != null AND appointmentList != ''}">
+	<table class="table" th:if="${appointmentList != null AND appointmentList != ''}">
 		<tr>
 			<th>Name</th>
 			<th>Class</th>
@@ -27,5 +28,6 @@
 			<td><a th:href="@{/deleteAppointment/}+${a.id}">Delete</a></td>
 		</tr>
 	</table>
+	</div>
 </body>
 </html>
