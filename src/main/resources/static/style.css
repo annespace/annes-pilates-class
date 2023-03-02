@@ -2,19 +2,19 @@
     margin: 0px;
     padding: 0px;
     font-family: "Open Sans";
-    font-size: 14px;
+    font-size: 13px;
     color: #707070;
     text-align: center;
 }
 
 h1 {
     font-family: lato, sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     text-transform: uppercase;
-    padding: 10px 20px;
-    background-color: #D3E2EF;
-    color: #ffffff;
-    text-align: left;
+    padding: 5px;
+    margin: 20px 20px;
+    border: #c1d3e3 3px solid;
+    color: #c1d3e3;
     position: absolute;
 }
 
@@ -24,7 +24,7 @@ h1 {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 26px;
     text-transform: capitalize;
     padding: 30px;
     color: #333;
@@ -41,12 +41,11 @@ button {
 
 th {
     background-color: #eeeeee;
-    height: 80px;
-    width: 200px;
+    padding: 20px 60px;
     text-transform: uppercase;
     color: #444;
 }
 
 td {
-    padding: 10px;
+    padding: 15px;
 }
