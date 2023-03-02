@@ -22,6 +22,11 @@ public class AppointmentController {
 	private DatabaseAccess database;
 
 	@GetMapping("/")
+	public String root(){
+	return "root";
+	}
+
+	@GetMapping("/index")
 	public String index(Model model) {
 		model.addAttribute("appointment", new Appointment());
 		model.addAttribute("appointmentList", database.getAllAppointments());
