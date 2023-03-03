@@ -6,7 +6,7 @@
     <title>anne pilates</title>
 </head>
 <body>
-<h1>Anne's</br> pilates</br> studio</h1>
+<h1 class="logo">Anne's</br> pilates</br> studio</h1>
 <h2>Please enter your appointment details</h2>
 <form method="post" action="" th:action="@{/insertAppointment}" th:object="${appointment}">
     <input type="hidden" name="id" th:field="*{id}" />
