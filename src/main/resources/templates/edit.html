@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <meta charset="ISO-8859-1">
+    <link rel="stylesheet" href="/style.css">
+    <title>anne pilates</title>
+</head>
+<body>
+<h1 class="logo">Anne's</br> pilates</br> studio</h1>
+
+<form method="post" action="" th:action="@{/editAppointment}" th:object="${appointment}">
+
+    <input type="hidden" th:field="*{id}">
+    Name: <input type="text" name="name" th:field="*{name}" /><br>
+    Class: <input type="text" name="classname" th:field="*{classname}" /><br>
+    Day:  <input type="date" name="appointmentDate" th:field="*{appointmentDate}" /><br>
+    Time: <input type="time" name="appointmentTime" th:field="*{appointmentTime}" /><br>
+    <input type="submit" value="submit">
+    </form>
+
+</body>
+</html>
