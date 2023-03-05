@@ -6,6 +6,7 @@
     <title>anne pilates</title>
 </head>
 <body>
+<div class="bg">
 <h1 class="logo">Anne's</br> pilates</br> studio</h1>
 
 <form method="post" action="" th:action="@{/editAppointment}" th:object="${appointment}">
@@ -17,6 +18,6 @@
     Time: <input type="time" name="appointmentTime" th:field="*{appointmentTime}" /><br>
     <input type="submit" value="submit">
     </form>
-
+</div>
 </body>
 </html>
