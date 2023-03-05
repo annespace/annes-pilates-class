@@ -3,7 +3,7 @@
     padding: 0px;
     font-family: "Open Sans";
     font-size: 13px;
-    color: #707070;
+    color: #222;
     text-align: center;
 }
 
@@ -52,51 +52,51 @@ button{
 .join {
     text-decoration: none;
     text-transform: uppercase;
-    color: #000;
+    color: #222;
     background-color: #fff;
     padding: 10px 50px;
 }
 
 .join:hover{
     color: #fff;
-    background-color: #000;
+    background-color: #222;
 }
 
 .container {
     margin: 60px auto 0px auto;
-    padding: 50px 0px 50px 0px;
+    padding: 40px 0px 50px 0px;
     width: 1040px;
-
     background-color: #fff;
 }
 
 h2{
-    color: #444;
     margin-bottom: 10px;
     font-size: 20px;
     text-transform: capitalize;
 }
 
-.add {
+.add, .submit {
     text-transform: uppercase;
     text-decoration: none;
     background-color: #fff;
-    padding: 10px 20px;
+    padding: 8px 16px;
     border: 1px solid;
-    margin: 10px;
+    margin: 0px 0px 10px 750px;
     color: #333;
-    margin-left:665px;
+}
+
+.add:hover, .submit:hover {
+    font-weight: bold;
 }
 
 .add2{
     border: none;
     padding: 0px;
     margin: 0px;
-
 }
 
-.add:hover {
-    font-weight: bold;
+.submit{
+    margin: 20px 0px 0px 0px;
 }
 
 .table {
@@ -105,11 +105,23 @@ h2{
 
 th {
     background-color: #ccc;
-    padding: 30px 55px;
+    padding: 20px 55px;
     text-transform: uppercase;
     color:#fff;
 }
 
 td {
     padding: 15px;
+}
+
+.input {
+    padding: 10px;
+}
+
+.new{
+    margin-bottom: 50px;
+}
+
+.a{
+    margin-bottom:20px;
 }
