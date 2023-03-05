@@ -16,8 +16,8 @@
     background-size: cover;
 }
 
-.bg2 {
-    background-color: #c1d3e3;
+.bg2{
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
 }
 
 .logo {
@@ -45,7 +45,11 @@
     border: #fff 5px solid;
 }
 
-.enter {
+button{
+    border: none;
+}
+
+.join {
     text-decoration: none;
     text-transform: uppercase;
     color: #000;
@@ -53,52 +57,57 @@
     padding: 10px 50px;
 }
 
-.enter:hover{
+.join:hover{
     color: #fff;
     background-color: #000;
 }
 
 .container {
-    margin: 0 auto;
-    width: 1000px;
+    margin: 60px auto 0px auto;
+    padding: 50px 0px 50px 0px;
+    width: 1040px;
+
     background-color: #fff;
 }
 
 h2{
+    color: #444;
+    margin-bottom: 10px;
     font-size: 20px;
     text-transform: capitalize;
-    padding: 30px;
-    color: #333;
 }
-
-button {
-    border: none;
-}
-
 
 .add {
-    padding: 0 10px;
-    margin: 10px auto;
+    text-transform: uppercase;
     text-decoration: none;
+    background-color: #fff;
+    padding: 10px 20px;
+    border: 1px solid;
+    margin: 10px;
+    color: #333;
+    margin-left:665px;
+}
+
+.add2{
+    border: none;
+    padding: 0px;
+    margin: 0px;
+
 }
 
 .add:hover {
-    color: #000;
     font-weight: bold;
-    text-decoration: underline solid #000;
 }
-
-
 
 .table {
     margin: 0 auto;
 }
 
 th {
-    background-color: #eeeeee;
-    padding: 20px 50px;
+    background-color: #ccc;
+    padding: 30px 55px;
     text-transform: uppercase;
-    color: #444;
+    color:#fff;
 }
 
 td {
