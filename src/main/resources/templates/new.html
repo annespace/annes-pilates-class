@@ -6,8 +6,10 @@
     <title>anne pilates</title>
 </head>
 <body>
+<div class="bg bg2">
 <h1 class="logo">Anne's</br> pilates</br> studio</h1>
-<h2>Please enter your appointment details</h2>
+    <div class="container">
+<h2>new appointment</h2>
 <form method="post" action="" th:action="@{/insertAppointment}" th:object="${appointment}">
     <input type="hidden" name="id" th:field="*{id}" />
     Name: <input type="text" name="name" th:field="*{name}" /><br>
@@ -16,5 +18,7 @@
     Time: <input type="time" name="appointmentTime" th:field="*{appointmentTime}" /><br>
     <input type="submit" value="Submit"/>
 </form>
+</div>
+</div>
 </body>
 </html>
